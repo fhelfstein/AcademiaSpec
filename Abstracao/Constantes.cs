@@ -7,9 +7,9 @@ namespace AcademiaSpec.Abstracao
 {
     public class Constantes
     {
-        public const string sBROWSER = "Chrome";
-        public const int iTIMEOUT = 20;
-        public const string sURL = "http://automationpractice.com/index.php";
+        public static string sBROWSER = "Chrome";
+        public static int iTIMEOUT = 20;
+        public static string sURL = "http://automationpractice.com/index.php";
         public const string sREPORTPATH = "./Reports/TestResult.html";
         public const string sSCREENSHOTPATH = "./Reports/Screenshots/";
 

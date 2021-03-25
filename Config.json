@@ -1,0 +1,5 @@
+{
+  "Browser": "FireFox",
+  "TimeOut": 20,
+  "URL": "http://automationpractice.com/index.php"
+}
