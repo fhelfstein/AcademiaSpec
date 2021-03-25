@@ -6,6 +6,7 @@ using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 
 namespace AcademiaSpec.Models
 {
@@ -28,6 +29,7 @@ namespace AcademiaSpec.Models
         {
             Assert.IsTrue(home.txtSearch().Displayed);
             home.txtSearch().SendKeys(sTermo + Keys.Enter);
+            Thread.Sleep(500);
             Assert.True(busca.lstProduct()[0].Displayed);
             Utils.screenshot(driver);
         }
@@ -63,6 +65,7 @@ namespace AcademiaSpec.Models
                     break;
                 }
             }
+            Thread.Sleep(500);
             Utils.screenshot(driver);
         }
     }

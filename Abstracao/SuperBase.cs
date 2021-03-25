@@ -39,7 +39,9 @@ namespace AcademiaSpec.Abstracao
                     driver = new InternetExplorerDriver();
                     break;
                 case "FireFox":
-                    driver = new FirefoxDriver();
+                    FirefoxOptions ffOptions = new FirefoxOptions();
+                    ffOptions.AddArguments("--headless");
+                    driver = new FirefoxDriver(ffOptions);
                     break;
                 case "Edge":
                     driver = new EdgeDriver();
@@ -51,6 +53,7 @@ namespace AcademiaSpec.Abstracao
 
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(Constantes.iTIMEOUT);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(Constantes.iTIMEOUT);
             driver.Navigate().GoToUrl(Constantes.sURL);
         }
 
