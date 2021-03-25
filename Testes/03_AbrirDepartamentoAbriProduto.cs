@@ -19,14 +19,14 @@ namespace AcademiaSpec.Testes
             busca = new BuscaCateg_model(driver);
         }
 
-        [Test]
+        //[Test]
         public void NavegaDepartamento()
         {
             busca.abreSubDepartamento();
             busca.AbreProduto();
         }
 
-        [TearDown]
+        //[TearDown]
         public void quit()
         {
             Dispose();

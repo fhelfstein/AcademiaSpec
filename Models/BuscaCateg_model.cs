@@ -29,13 +29,14 @@ namespace AcademiaSpec.Models
         {
             Assert.IsTrue(home.txtSearch().Displayed);
             home.txtSearch().SendKeys(sTermo + Keys.Enter);
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
             Assert.True(busca.lstProduct()[0].Displayed);
             Utils.screenshot(driver);
         }
 
         public void AbreProduto()
         {
+            Thread.Sleep(1000);
             Assert.True(busca.lstProduct()[0].Displayed);
             busca.lstProduct()[0].Click();
             Assert.True(product.lblNomeProduto().Displayed);
@@ -65,7 +66,7 @@ namespace AcademiaSpec.Models
                     break;
                 }
             }
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
             Utils.screenshot(driver);
         }
     }

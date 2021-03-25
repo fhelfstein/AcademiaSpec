@@ -18,14 +18,14 @@ namespace AcademiaSpec.Testes
         {
 
         }
-        [Test]
+        //[Test]
         public void AdicionaCarrinho()
         {
             home.abreProdutoHome();
             product.adicionaCarrinho();
         }
 
-        [TearDown]
+        //[TearDown]
         public void quit()
         {
             //Dispose();

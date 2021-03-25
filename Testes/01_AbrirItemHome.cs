@@ -17,13 +17,13 @@ namespace AcademiaSpec.Testes
           
         }
 
-        [Test]
+        //[Test]
         public void AbreProduto()
         {
             home.abreProdutoHome();
         }
 
-        [TearDown]
+        //[TearDown]
         public void quit()
         {
             Dispose();

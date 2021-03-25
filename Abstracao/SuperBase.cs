@@ -27,6 +27,8 @@ namespace AcademiaSpec.Abstracao
                 .Build();
 
             Constantes.sBROWSER = configuration["Browser"];
+            Constantes.sURL = configuration["URL"];
+            Constantes.iTIMEOUT = int.Parse(configuration["TimeOut"]);
 
             switch (Constantes.sBROWSER)
             {

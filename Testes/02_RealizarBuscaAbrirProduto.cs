@@ -19,14 +19,14 @@ namespace AcademiaSpec.Testes
             busca = new BuscaCateg_model(driver);
         }
 
-        [Test]
+        //[Test]
         public void buscaProduto()
         {
             busca.BuscaProduto("Dress");
             busca.AbreProduto();
         }
 
-        [TearDown]
+        //[TearDown]
         public void quit()
         {
             Dispose();
